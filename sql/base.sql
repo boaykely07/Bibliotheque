@@ -1,4 +1,3 @@
--- 2. Création des tables de référence
 
 CREATE TABLE Profils_Adherent (
     id_profil SERIAL PRIMARY KEY,
