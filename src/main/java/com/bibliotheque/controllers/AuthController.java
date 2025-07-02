@@ -36,13 +36,11 @@ public class AuthController {
 
     @GetMapping("/inscription")
     public String showInscriptionForm(Model model) {
-        // On récupère la liste de tous les profils pour les afficher dans le formulaire
         List<ProfilAdherent> profils = profilAdherentRepository.findAll();
         model.addAttribute("profils", profils);
-        return "auth/inscription"; // Affiche le fichier /WEB-INF/jsp/auth/inscription.jsp
+        return "auth/inscription"; 
     }
 
-    // Méthode pour TRAITER le formulaire d'inscription
     @PostMapping("/inscription")
     public String processInscription(
             @RequestParam String nom,
