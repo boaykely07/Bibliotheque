@@ -7,10 +7,10 @@
 
 -- Profils pour les différents types d'adhérents
 INSERT INTO Profils_Adherent (nom_profil, quota_emprunts_simultanes, duree_pret_domicile_jours, duree_pret_sur_place_heures, peut_prolonger_pret, jours_penalite_par_retard) VALUES
-('Adhérent Standard', 3, 21, 3, TRUE, 1),
-('Adhérent Jeune', 5, 14, 2, TRUE, 1),
-('Chercheur', 10, 42, 8, TRUE, 2),
-('Club de Lecture', 15, 28, 5, FALSE, 3);
+('etudiant', 3, 21, 3, TRUE, 1),
+('professeur', 5, 14, 2, TRUE, 1),
+('professionnel', 10, 42, 8, TRUE, 2),
+('anonyme', 15, 28, 5, FALSE, 3);
 
 -- Quelques auteurs
 INSERT INTO Auteurs (nom, prenom) VALUES
